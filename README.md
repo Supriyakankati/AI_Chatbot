@@ -59,42 +59,6 @@ Python Path      :         C:\Users\Checkout\anaconda3\envs\install_demo\python.
         rasa shell        
     ```
 
-# Conversational flow:
-
-This is the conversational flow the chatbot and also I have attached the Demo screenshots as per the live example includes bot responses as well.
-
-Only User commands:
-
-starts:
-
-Hi!
-Thanks.
-click on Facecare.
-click on Oily skin.
-Can you please recommend skin care categories?
-How can I use them?
-Can you please suggest the best brand?
-	# About skin care problems:
-I have acne
-
-bot- calls api and recommends the acne vedio.
-
-user- dark pigmentation
-
-bot- calls api and recommends the dark spots vedio.
-
-user - pimples
-
-bot- calls api and recommends the pimples vedio.
-
-user - sunburns
-
-bot- calls api and recommends the sunburns vedio.
-
-Bye.
-
-
-
 # Demo:
 Below is the demo of the chatbot. It shows the conversation between user and chatbot. It also shows the flow of the data from user to the chatbot.
 
