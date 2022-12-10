@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+
+- story: GEt to know their skin..
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_askproblem
+  - intent: skincare
+    entities:
+    - Facecare
+  - action: utter_facecare
+  - intent: skintone
+  - intent: recommend 
+  - action: utter_recommend
+  - intent: basicsteps
+  - action: utter_steps
+  - intent: brands
+  - action: utter_prods
+
+
+- story: GEt to know their skin..
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_askproblem
+  - intent: skincare
+    entities:
+    - Bodycare
+  - action: utter_facecare
+   
+
+- story: GEt to know their skin..
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_askproblem
+  - intent: skincare
+    entities:
+    - Haircare
+  - action: utter_facecare
