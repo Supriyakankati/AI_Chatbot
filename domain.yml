@@ -1,0 +1,123 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - skincare
+  - skintone
+  - skinissues
+  - basicsteps
+  - recommend 
+  - brands
+
+
+
+entities: 
+ - skinprob
+ - skintype
+ - skintone
+ - issue_keyword
+
+slots:
+    skinprob:
+     type: categorical
+     values:
+      - low
+      - medium
+      - high
+     mappings:
+     - type: from_entity
+       entity: skinprob
+        
+    skintype:
+     type: categorical
+     values:
+      - oily
+      - dry
+      - combination
+     mappings:
+     - type: from_entity
+       entity: skintype
+
+    skintone:
+     type: categorical
+     values:
+      - Light pale white
+      - Medium
+      - Brown
+      - Dark Brown
+     mappings:
+     - type: from_entity
+       entity: skintone
+    
+    issue_keyword:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: issue_keyword
+actions:
+    - action_hello_world
+
+responses:
+  utter_greet:
+  - text: "Hello. I am here to help you with the best skin care routine."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_askproblem:
+  - text: "Great! Are you looking for :"
+    buttons:
+      - title: "Facecare"
+        payload: "/skincare"
+      - title: "Bodycare"
+        payload: "/skincare"
+
+  utter_facecare:
+  - text: "Okay. what type of skin are you:"
+    buttons:
+     - title: "Oily"
+       payload: "/skintone"
+     - title: "dry"
+       payload: "/skintone"
+    
+  utter_bodycare:
+    - text: "ask type of skin care you want to take care of"
+
+  utter_recommend:
+    - text: "Okay.These are the few skin care categories I can recommend. \n1.Moisturizers\n2.Serums\n3.cleansers\n4.Eye Creams"
+
+  utter_steps:
+    - text: "These are the Basic Skincare Routine Steps.
+
+             First, rinse the face with cleanser in the morning if you have normal to dry skin.
+
+             Second, apply serum and followed by moisturizers.
+
+             Then, if necessary apply eye cream before going to bed."
+ 
+  utter_prods:
+    - text: "Sure.These are the few Best-rated brands.\n1.Estee lauder\n2.Clinique\n3.Belif\n4.Origins\nAmong these, I recommend the Clinique Brand. And here is the link https://www.clinique.com/skincare-all"
+
+ 
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
