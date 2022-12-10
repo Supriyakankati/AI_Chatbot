@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-issue_keyword",
+      "2": "I-issue_keyword",
+      "3": "L-issue_keyword",
+      "4": "U-issue_keyword",
+      "5": "B-skinprob",
+      "6": "I-skinprob",
+      "7": "L-skinprob",
+      "8": "U-skinprob",
+      "9": "B-skintone",
+      "10": "I-skintone",
+      "11": "L-skintone",
+      "12": "U-skintone",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-issue_keyword": 1,
+      "I-issue_keyword": 2,
+      "L-issue_keyword": 3,
+      "U-issue_keyword": 4,
+      "B-skinprob": 5,
+      "I-skinprob": 6,
+      "L-skinprob": 7,
+      "U-skinprob": 8,
+      "B-skintone": 9,
+      "I-skintone": 10,
+      "L-skintone": 11,
+      "U-skintone": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
