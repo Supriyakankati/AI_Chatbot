@@ -1,4 +1,4 @@
-# AI_Chatbot-skincarebot
+# AI_Chatbot
 
 # Project Overview:
 The Main goal of this conversational Ai chatbot is assist in recommending the best skin care routine on a daily basis. The motivation behind this concept comes with taking good care of your skin is important for more than just your appearance. As the largest organ you have, your skin is essential to your general health. If you take care of it, it can help take care of you. This is why it is so important to have a well-thought-out skin care routine. It is absolutely worth the time and energy to take care of your skin on a daily basis. Even due to the change in weather conditions will be facing problems with the extreme dry skin. By using skincare we can keep our skin clear and soft by avoiding skin problems like acne, blackheads, skin burns and dark spots. This bot helps in suggesting video recommendations for the cause and treatment for skin problems like acne, dark pigmentation, pimples, sunburns and blackheads etc.. It also helps in suggesting best brands to use from the top rated.
